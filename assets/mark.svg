@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Das Foundation">
+  <circle cx="16" cy="16" r="16" fill="#14352a"/>
+  <path d="M16 24.5c-3.6 0-6.5-2.9-6.5-6.5 0-4.9 6.5-10.5 6.5-10.5S22.5 13.1 22.5 18c0 3.6-2.9 6.5-6.5 6.5z" fill="#6ab98b"/>
+  <path d="M16 9.5v14" stroke="#14352a" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M16 16.5l3.2-3.2M16 20l-2.8-2.8" stroke="#14352a" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

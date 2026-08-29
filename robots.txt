@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: add your sitemap URL once the domain is live, e.g.
+# Sitemap: https://yourdomain.org/sitemap.xml
