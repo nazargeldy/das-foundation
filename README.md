@@ -2,7 +2,7 @@
 
 Static website for Das Foundation, an environmental non-profit working on recycling,
 waste recovery and sustainability education. Companion to the Instagram account
-[@manilai.ngo](https://www.instagram.com/manilai.ngo/).
+[@_dasfoundation](https://www.instagram.com/_dasfoundation/).
 
 No build step, no dependencies. Plain HTML, one stylesheet, one small script.
 

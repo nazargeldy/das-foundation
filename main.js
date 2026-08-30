@@ -30,6 +30,36 @@
     });
   }
 
+  // Contact form. GitHub Pages cannot receive form posts, so submitting opens
+  // the visitor's own mail client with the fields already composed. Replace
+  // this with a real endpoint (Formspree, Basin, Tally) when one exists:
+  // set the form's action to the endpoint URL and delete this block.
+  var contactForm = document.querySelector('[data-mailto-form]');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var value = function (name) {
+        var field = contactForm.querySelector('[name="' + name + '"]');
+        return field ? field.value.trim() : '';
+      };
+
+      var subject = 'Website enquiry - ' + (value('topic') || 'General');
+      var body = [
+        'Name: ' + value('name'),
+        'Email: ' + value('email'),
+        'Location: ' + value('location'),
+        '',
+        value('message')
+      ].join('\n');
+
+      window.location.href = contactForm.getAttribute('data-mailto-form')
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+    });
+  }
+
   // Keep the footer copyright year current
   Array.prototype.forEach.call(
     document.querySelectorAll('[data-year]'),
